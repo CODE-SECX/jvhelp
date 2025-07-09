@@ -604,7 +604,7 @@ dotlottie-player {
 
 .product-image-large {
     width: 100%;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     border: 2px solid #e8f5e8;
@@ -741,7 +741,7 @@ dotlottie-player {
     }
 
     .product-image-large {
-        height: 400px;
+        height: 250px;
     }
 
     .dimensions-grid {
@@ -764,6 +764,292 @@ dotlottie-player {
 
     .product-price-large {
         font-size: 2rem;
+    }
+}
+
+/* Footer Section Styles */
+.footer-section {
+    background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+    color: white;
+    padding: 3rem 0 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4caf50, #66bb6a, #81c784);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.footer-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-brand-text {
+    flex: 1;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #e8eaf6;
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    color: #c5cae9;
+    margin: 0;
+}
+
+.footer-section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #128c7e, #075e54);
+}
+
+.whatsapp-icon {
+    font-size: 1.3rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer-social {
+    text-align: left;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.social-link.facebook::before {
+    background: linear-gradient(135deg, #1877f2, #42a5f5);
+}
+
+.social-link.instagram::before {
+    background: linear-gradient(135deg, #e4405f, #f77737, #fccc63);
+}
+
+.social-link.twitter::before {
+    background: linear-gradient(135deg, #1da1f2, #42a5f5);
+}
+
+.social-link.youtube::before {
+    background: linear-gradient(135deg, #ff0000, #ff4444);
+}
+
+.social-link.linkedin::before {
+    background: linear-gradient(135deg, #0077b5, #42a5f5);
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.social-link:hover::before {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    margin-bottom: 1.5rem;
+}
+
+.footer-copyright {
+    color: #c5cae9;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .footer-title {
+        font-size: 1.8rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .whatsapp-link {
+        justify-content: center;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-subtitle {
+        font-size: 1rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .whatsapp-link {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+        padding: 0 1rem;
     }
 }
 
